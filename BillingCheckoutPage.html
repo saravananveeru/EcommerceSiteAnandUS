@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing / Checkout Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">MyStore</div>
+    <input type="text" class="search-bar" placeholder="Search products...">
+    <div class="icons">
+      <span>🛒</span>
+      <span>❤️</span>
+      <span>👤</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>Shop</li>
+      <li>Deals</li>
+      <li>Categories</li>
+      <li>Account</li>
+    </ul>
+  </nav>
+
+  <main class="checkout">
+    <h2>Checkout</h2>
+    <div class="checkout-container">
+
+      <section class="billing-info">
+        <h3>Billing Information</h3>
+        <form id="billing-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Phone Number" required>
+          <input type="text" placeholder="Address Line 1" required>
+          <input type="text" placeholder="Address Line 2">
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="State" required>
+          <input type="text" placeholder="ZIP Code" required>
+        </form>
+      </section>
+
+      <section class="payment-info">
+        <h3>Payment Method</h3>
+        <form>
+          <label><input type="radio" name="payment" checked> Credit / Debit Card</label><br>
+          <label><input type="radio" name="payment"> UPI</label><br>
+          <label><input type="radio" name="payment"> Cash on Delivery</label><br>
+        </form>
+      </section>
+
+      <section class="order-summary">
+        <h3>Order Summary</h3>
+        <ul>
+          <li>Item 1 - ₹499</li>
+          <li>Item 2 - ₹799</li>
+          <li>Shipping - ₹50</li>
+        </ul>
+        <h4>Total: ₹1348</h4>
+        <button type="submit" form="billing-form">Place Order</button>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
